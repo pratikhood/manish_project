@@ -1,45 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Product Automation Testing Suite]">
+<suite thread-count="-1" name="Failed suite [Product Automation Testing Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.product.qa.extentReportListener.Listeners"/>
   </listeners>
-  <test name="Home Page Test(failed)">
+  <test name="Test(failed)">
     <classes>
       <class name="com.product.qa.testcases.HomePageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="VerifyCoursesLinkTest"/>
           <include name="setUp"/>
           <include name="VerifyMzLogotest"/>
+          <include name="VerifyHomePageTitleTest"/>
         </methods>
       </class> <!-- com.product.qa.testcases.HomePageTest -->
     </classes>
-  </test> <!-- Home Page Test(failed) -->
-  <test name="My Profile Test(failed)">
-    <classes>
-      <class name="com.product.qa.testcases.MyProfileTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="ValidateRemoveImageTest"/>
-          <include name="tearDown"/>
-          <include name="verifyBesicDetailTest"/>
-        </methods>
-      </class> <!-- com.product.qa.testcases.MyProfileTest -->
-    </classes>
-  </test> <!-- My Profile Test(failed) -->
-  <test name="Blogs Page Test(failed)">
-    <classes>
-      <class name="com.product.qa.testcases.BlogsPageTest">
-        <methods>
-          <include name="EditCommentTest"/>
-          <include name="setUp"/>
-          <include name="deleteCommentTest"/>
-          <include name="relatedTagsOpenTest"/>
-          <include name="addingCommentTest"/>
-          <include name="tearDown"/>
-          <include name="AbusingWordTest"/>
-        </methods>
-      </class> <!-- com.product.qa.testcases.BlogsPageTest -->
-    </classes>
-  </test> <!-- Blogs Page Test(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Product Automation Testing Suite] -->

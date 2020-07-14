@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="-1" name="Failed suite [Product Automation Testing Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.product.qa.extentReportListener.Listeners"/>
+  </listeners>
+  <test name="Test(failed)">
     <classes>
-      <class name="com.product.qa.testcases.CoursesPageTest">
+      <class name="com.product.qa.testcases.HomePageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="VerifyCoursesSessionTest" invocation-numbers="0 1 2"/>
+          <include name="VerifyCoursesLinkTest"/>
+          <include name="setUp"/>
+          <include name="VerifyMzLogotest"/>
+          <include name="VerifyHomePageTitleTest"/>
         </methods>
-      </class> <!-- com.product.qa.testcases.CoursesPageTest -->
+      </class> <!-- com.product.qa.testcases.HomePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Product Automation Testing Suite] -->

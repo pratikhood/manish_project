@@ -5,84 +5,19 @@
 <listener class-name="com.product.qa.extentReportListener.Listeners"/>
 </listeners>
 
-     <test  name="Dashboard Page Test">
+   <test thread-count="5" name="Test">
     <classes>
-     <class name="com.product.qa.testcases.DashboardPageTest"/>
-     </classes>
-     </test>
-     
-     <test name="Home Page Test">
-     <classes>
-     <class name="com.product.qa.testcases.HomePageTest"/> 
-     </classes>
-     </test>
-     
-     
-     <test name="Event Page Test">
-     <classes>
-     <class name="com.product.qa.testcases.EventsPageTest"/>
-     </classes>
-     </test>
-     
-     <test name="Change Password Test">
-     <classes>
+     <!--<class name="com.product.qa.testcases.DashboardPageTest"/>-->
+      <class name="com.product.qa.testcases.HomePageTest"/> 
+    	
+     <!--<class name="com.product.qa.testcases.EventsPageTest"/>
      <class name="com.product.qa.testcases.ChangePasswordTest"/>
-     </classes>
-     </test>
-     
-     <test name="My Profile Test">
-     <classes>
      <class name="com.product.qa.testcases.MyProfileTest"/>
-     </classes>
-     </test>
-     
-     <test name="Feedback Test">
-     <classes>
      <class name="com.product.qa.testcases.FeedbackTest"/>
-     </classes>
-     </test>
-     
-     <test name="Login Test">
-     <classes>
      <class name="com.product.qa.testcases.LoginTest"/>
-     </classes>
-     </test>
-     
-     <test name="Blogs Page Test">
-     <classes>
      <class name="com.product.qa.testcases.BlogsPageTest"/>
-     </classes>
-     </test>
-     
-      <test name="My Event Test">
-     <classes>
      <class name="com.product.qa.testcases.MyEventsTest"/>
+     <class name="com.product.qa.testcases.CoursesPageTest"/> -->
      </classes>
-     </test>
-     
-      <test name="Courses Page Test">
-     <classes>
-     <class name="com.product.qa.testcases.CoursesPageTest"/>
-     </classes>
-     </test>
-  
-     
-     <!--<classes>
-     <class name="com.product.qa.testcases.EventsPageTest"/>
-     </classes>
-     <classes>
-     <class name="com.product.qa.testcases.DashboardPageTest"/> 
-     </classes>
-     <classes>
-      <class name="com.product.qa.testcases.ChangePasswordTest"/> 
-      </classes>
-      <classes>
-      <class name="com.product.qa.testcases.MyProfileTest"/> 
-      <class name="com.product.qa.testcases.FeedbackTest"/> 
-      <class name="com.product.qa.testcases.LoginTest"/>
-      <class name="com.product.qa.testcases.BlogsPageTest"/> 
-      <class name="com.product.qa.testcases.MyEventsTest"/> 
-     <class name="com.product.qa.testcases.CoursesPageTest"/> 
-    </classes>  -->
- <!--   </test>-->
+    </test>
 </suite> 
